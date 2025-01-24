@@ -1,5 +1,5 @@
 header {
-  display: flex;
+  display: inline;
   justify-content: space-between;
   align-items: center;
 }
@@ -58,11 +58,13 @@ header .header-right input {
 
 main {
   display: flex;
+  max-width: 100%;
   height: 800px;
 }
 
 aside {
-  background-color: blue;
+  padding: 1em;
+  background-color: #FFC107;
 }
 aside nav {
   display: flex;
