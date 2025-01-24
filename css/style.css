@@ -6,6 +6,8 @@ header {
 
 body {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -54,6 +56,21 @@ header .header-right input {
   text-align: right;
 }
 
-body {
-  margin: 0;
+main {
+  display: flex;
+  height: 800px;
+}
+
+aside {
+  background-color: blue;
+}
+aside nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+aside nav a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=style.css.map */

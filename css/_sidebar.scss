@@ -1,0 +1,19 @@
+@use '_color';
+main {
+    display: flex;
+    height: 800px;
+}
+
+aside {
+    background-color: blue;
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

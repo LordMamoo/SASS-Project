@@ -1,7 +1,3 @@
 @use '_navBar';
-
-body {
-    margin: 0;
-}
-
-
+@use '_sidebar';
+@use '_color';
