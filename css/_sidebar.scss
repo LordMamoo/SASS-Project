@@ -3,7 +3,7 @@
 main {
     display: flex;
     max-width: 100%;
-    height: 800px;
+    height: 43.7rem;
 }
 
 aside {
@@ -12,6 +12,7 @@ aside {
 
     img{
         width: 100%;
+        object-fit: cover;
     }
 
     nav{
@@ -22,7 +23,12 @@ aside {
 
         a{
             text-decoration: none;
+            font-size: 14px;
+            line-height: 30px;
             color: black;
+        }
+        a:hover {
+            color: color.$color-one;
         }
     }
 }
