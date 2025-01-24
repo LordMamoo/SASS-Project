@@ -55,9 +55,9 @@ header .header-right svg {
 }
 header .header-right .search-container {
   position: relative;
+  width: 180px;
 }
 header .header-right .search-container input {
-  width: 200px;
   text-align: right;
 }
 header .header-right .search-container svg {
