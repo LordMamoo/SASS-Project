@@ -1,2 +1,13 @@
 @use '_navBar';
+<<<<<<< HEAD
 @use '_sidebar';
+=======
+@use '_sidebar';
+@use '_color';
+
+%header-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+>>>>>>> e5b8a73f09b0d121c702af973333fdf3ab118dbd
