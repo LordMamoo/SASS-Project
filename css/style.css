@@ -39,6 +39,7 @@ header p {
 }
 header .header-right {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 header .header-right a {
@@ -52,8 +53,17 @@ header .header-right svg {
   width: auto;
   height: auto;
 }
-header .header-right input {
+header .header-right .search-container {
+  position: relative;
+}
+header .header-right .search-container input {
+  width: 200px;
   text-align: right;
+}
+header .header-right .search-container svg {
+  position: absolute;
+  top: 5px;
+  left: -5px;
 }
 
 main {
@@ -78,4 +88,12 @@ aside nav {
 aside nav a {
   text-decoration: none;
   color: black;
+}
+
+.graphs {
+  width: 100%;
+  background-image: url(../images/flag-raise.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
