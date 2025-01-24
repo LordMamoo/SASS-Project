@@ -1,4 +1,5 @@
 @use '_color';
+
 main {
     display: flex;
     max-width: 100%;
@@ -6,14 +7,19 @@ main {
 }
 
 aside {
-    
-    padding: 1em;
+    width: 8%;
     background-color: color.$color-two;
+
+    img{
+        width: 100%;
+    }
+
     nav{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
         a{
             text-decoration: none;
             color: black;
