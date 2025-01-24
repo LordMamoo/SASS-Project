@@ -3,7 +3,7 @@
 main {
     display: flex;
     max-width: 100%;
-    height: 43.7rem;
+    height: 43rem;
 }
 
 aside {
@@ -29,6 +29,18 @@ aside {
         }
         a:hover {
             color: color.$color-one;
+        }
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 8%;
+        background-color: color.$color-three;
+        text-align: center;
+
+        span {
+            color: color.$color-four;
         }
     }
 }
