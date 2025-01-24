@@ -5,7 +5,7 @@ main {
 }
 
 aside {
-    background-color: blue;
+    background-color: $color-three;
     nav{
         display: flex;
         flex-direction: column;
