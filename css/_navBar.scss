@@ -44,7 +44,7 @@ header {
 
         .header-right {
             display: flex;
-            // justify-content: space-between;
+            justify-content: space-between;
             align-items: center;
             
         a {
@@ -58,8 +58,20 @@ header {
             width: auto;
             height: auto;
             }
-        input {
+
+        .search-container {
+            position: relative;
+        }
+
+        .search-container input {
+            width: 200px;
             text-align: right;
+        }
+        
+        .search-container svg {
+            position: absolute;
+            top: 5px;
+            left:-5px;
         }
     }
 }

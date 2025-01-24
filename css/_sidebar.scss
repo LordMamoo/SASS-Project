@@ -31,16 +31,4 @@ aside {
             color: color.$color-one;
         }
     }
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 8%;
-        background-color: color.$color-three;
-        text-align: center;
-
-        span {
-            color: color.$color-four;
-        }
-    }
 }
