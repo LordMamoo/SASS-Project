@@ -13,8 +13,6 @@ body {
 header {
   background-color: #827e7e;
   margin: 0;
-  padding: 10px 0px;
-  height: 10px;
 }
 header .header-left {
   display: flex;
@@ -32,7 +30,7 @@ header .header-left img {
      object-fit: cover;
   background-color: #FFC107;
 }
-header p {
+header .header-left p {
   margin-left: 5px;
   font-size: 10px;
   color: #ffffff;
@@ -41,29 +39,6 @@ header .header-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header .header-right a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0;
-}
-header .header-right svg {
-  max-width: 40px;
-  max-height: 40px;
-  width: auto;
-  height: auto;
-}
-header .header-right .search-container {
-  position: relative;
-  width: 180px;
-}
-header .header-right .search-container input {
-  text-align: right;
-}
-header .header-right .search-container svg {
-  position: absolute;
-  top: 5px;
-  left: -5px;
 }
 
 main {
