@@ -1,3 +1,11 @@
+@use '_color';
+
+%header-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
@@ -5,13 +13,12 @@ body {
 }
 
 header {
-   background-color: #827e7e;
+   background-color: color.$header-color;
     @extend %header-footer;
             margin: 0;
             padding: 10px 0px;
             height: 10px;
         
-
         .header-left {
             display: flex;
             justify-content: center;
@@ -26,13 +33,13 @@ header {
             width: 20px;
             height: 20px;
             object-fit: cover;
-            background-color: #FFC107;
+            background-color: color.$color-two;
         }
 
         p {
             margin-left: 5px;
             font-size: 10px;
-            color: white;
+            color: color.$color-four;
         }
 
         .header-right {
@@ -41,7 +48,7 @@ header {
             align-items: center;
             
         a {
-            color: white;
+            color: color.$color-four;
             text-decoration: none;
             margin: 0;
             }

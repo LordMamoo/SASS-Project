@@ -35,14 +35,14 @@ header .header-left img {
 header p {
   margin-left: 5px;
   font-size: 10px;
-  color: white;
+  color: #ffffff;
 }
 header .header-right {
   display: flex;
   align-items: center;
 }
 header .header-right a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   margin: 0;
 }
@@ -63,8 +63,11 @@ main {
 }
 
 aside {
-  padding: 1em;
+  width: 8%;
   background-color: #FFC107;
+}
+aside img {
+  width: 100%;
 }
 aside nav {
   display: flex;
