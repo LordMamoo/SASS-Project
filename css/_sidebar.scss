@@ -7,6 +7,9 @@ main {
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 8%;
     background-color: color.$color-two;
 
@@ -30,5 +33,11 @@ aside {
         a:hover {
             color: color.$color-one;
         }
+    }
+
+    .bottom {
+        text-align: center;
+        color: color.$color-four;
+        background-color: color.$color-three;
     }
 }

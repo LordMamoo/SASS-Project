@@ -48,6 +48,9 @@ main {
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 8%;
   background-color: #FFC107;
 }
@@ -70,6 +73,11 @@ aside nav a {
 }
 aside nav a:hover {
   color: #0000ff;
+}
+aside .bottom {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .enemies .illum-prof, .enemies .auto-prof, .enemies .term-prof, .enemies .orders-prof, .enemies .personal-prof, .enemies .update-prof {
@@ -113,6 +121,10 @@ aside nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: auto;
+}
+.enemies h1 {
+  position: absolute;
+  background-color: red;
 }
 .enemies .enemies-img {
   position: absolute;
@@ -213,13 +225,4 @@ aside nav a:hover {
 body {
   width: 100%;
   margin: 0 auto;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: black;
-  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -30,173 +30,116 @@
     background-position: center;
 }
 
-// .graphs {
-    // position: relative;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: flex-end;
+.enemies{
+    position: relative;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
     // padding: 1rem;
-    // width: 100%;
-    // height: 100%;
-    // max-width: 100%;
-    // // margin: 20px;
-    // background-image: url(../images/flag-raise.jpg);
-    // background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
+    background-image: url(/images/flag-raise.jpg);
+    background-color: color.$color-four;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: auto;
+    
+    h1 {
+        position: absolute;
+        background-color: red;
+    }
+    
+    .enemies-img{
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
 
-    // .bottom {
-        // display: flex;
-        // justify-content: flex-end;
-        // background-color: green;
-        
-        // .orders{
-        //     display: flex;
-        //     width: 100%;
-        //     padding: 1rem;
-        //     background-color: color.$color-five;
-        //     opacity: 0.8;
+    .enemies-img h4, p {
+        position: absolute;
+        top: 100px;
+        font-size: 10px;
+        text-align: left;
+    }
 
-        //     .major-orders{
-        //         width: 50%;
-        //         margin: 1rem;
-        //         padding: 10px;
-        //         border-radius: 5px;
-        //         background-color: grey;
-        //     }
+    .enemies-img h4 {
+        top: 90px;
+    }
+
+    .enemies-img p:nth-of-type(1) {
+        top: 70px;
+    }
+
+    .enemies-img p:nth-of-type(2) {
+        top: 130px;
+    }
+
+    .personal-prof {
+        @extend %profile; 
+        background-image: url(/images/flag.png);
+    }
+
+
+    .personal-prof-mini {
+        @extend %mini-profile;
+        background-image: url(/images/salute.webp);
+    }
+
+    .orders-prof {
+        @extend %profile; 
+        background-image: url(/images/flag.png);
+    }
+
+    .orders-prof-mini {
+        @extend %mini-profile;
+        background-image: url(/images/salute.webp);
+    }
+
+    .term-prof {
+        @extend %profile;           
+        background-image: url(../images/terminids.webp);
+    }
+
+    .auto-prof {
+        @extend %profile;
+        background-image: url(/images/automatons.avif);                
+    }
+
+    .green-dot {
+        color: green;
+        border-radius: 50%;
+    }
+
+    .term-prof-mini {
+        @extend %mini-profile;
+        background-image: url(/images/Hunter.webp);
+        background-color: tan; 
+    }
             
-        //     .personal-orders{
-        //         width: 50%;
-        //         margin: 1rem;
-        //         padding: 10px;
-        //         border-radius: 5px;
-        //         background-color: grey;
-        //     }
-        // }
-        .enemies{
-            position: relative;
-            display: flex;
-            // flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-end;
-            width: 100%;
-            height: 100%;
-            // padding: 1rem;
-            background-image: url(/images/flag-raise.jpg);
-            background-color: color.$color-four;
-            background-size: cover;
-            background-repeat: no-repeat;
-            overflow-x: auto;
-            .enemies-img{
-                position: absolute;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: baseline;
-                gap: 15px;
-                width: 100%;
-                height: auto;
-                padding: 1rem;
-            }
+    .auto-prof-mini {
+        @extend %mini-profile;
+        background-image: url(/images/auto-grunt.webp);
+        background-size: 15px, cover;
+        background-repeat: no-repeat;
+        background-color: rgb(109, 157, 173);
+    }
 
-            .enemies-img h4, p {
-                position: absolute;
-                top: 100px;
-                font-size: 10px;
-                text-align: left;
-            }
+    .illum-prof {
+        @extend %profile;
+        background-image: url(/images/illuminates.jpg);
+    }
 
-            .enemies-img h4 {
-                top: 90px;
-            }
-
-            .enemies-img p:nth-of-type(1) {
-                top: 70px;
-            }
-
-            .enemies-img p:nth-of-type(2) {
-                top: 130px;
-            }
-
-            .update-prof {
-                @extend %profile; 
-                background-image: url(/images/helldivers-2-yellow.jpg);
-            }
-
-
-            .update-prof-mini {
-                @extend %mini-profile;
-                background-image: url(/images/blue-prof.avif);
-
-            }
-
-            .personal-prof {
-                @extend %profile; 
-                background-image: url(/images/galaxy-map.webp);
-            }
-
-
-            .personal-prof-mini {
-                @extend %mini-profile;
-                background-image: url(/images/Helldivers-gun.webp);
-
-            }
-
-            .orders-prof {
-                @extend %profile; 
-                background-image: url(/images/flag.png);
-            }
-
-
-            .orders-prof-mini {
-                @extend %mini-profile;
-                background-image: url(/images/salute.webp);
-
-            }
-
-            
-
-            .term-prof {
-                @extend %profile;           
-                background-image: url(../images/terminids.webp);
-            }
-
-            .auto-prof {
-                @extend %profile;
-                background-image: url(/images/automatons.avif);                
-            }
-
-            .green-dot {
-                color: green;
-                border-radius: 50%;
-            }
-
-            .term-prof-mini {
-               @extend %mini-profile;
-               background-image: url(/images/Hunter.webp);
-               background-color: tan; 
-            }
-            
-            .auto-prof-mini {
-                @extend %mini-profile;
-                background-image: url(/images/auto-grunt.webp);
-                background-size: 15px, cover;
-                background-repeat: no-repeat;
-                background-color: rgb(109, 157, 173);
-            }
-
-            .illum-prof {
-                @extend %profile;
-                background-image: url(/images/illuminates.jpg);
-            }
-
-            .illum-prof-mini {
-                @extend %mini-profile;
-                background-image: url(/images/voteless.webp);
-            }
-
-
-
-        }
+    .illum-prof-mini {
+        @extend %mini-profile;
+        background-image: url(/images/voteless.webp);
+    }
+}
     // }
 
     // .info{
