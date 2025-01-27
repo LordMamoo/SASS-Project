@@ -30,6 +30,10 @@
     background-position: center;
 }
 
+
+
+
+
 .enemies{
     position: relative;
     display: flex;
@@ -80,15 +84,26 @@
         top: 130px;
     }
 
+    .update-prof {
+        @extend %profile; 
+        background-image: url(/images/helldivers-2-yellow.jpg);
+    }
+
+
+    .update-prof-mini {
+        @extend %mini-profile;
+        background-image: url(/images/blue-prof.avif);
+    }
+
     .personal-prof {
         @extend %profile; 
-        background-image: url(/images/flag.png);
+        background-image: url(/images/galaxy-map.webp);
     }
 
 
     .personal-prof-mini {
         @extend %mini-profile;
-        background-image: url(/images/salute.webp);
+        background-image: url(/images/Helldivers-gun.webp);
     }
 
     .orders-prof {
