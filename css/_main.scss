@@ -37,6 +37,9 @@
     width: 100%;
 
     .earth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-image: url(/images/flag-raise.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -45,10 +48,12 @@
         .welcome {
             display: flex;
             flex-direction: column;
+            text-align: center;
             padding: 2rem;
             background-color: color.$color-four;
             opacity: 0.8;
             width: 40%;
+            height: 50%;
         } 
     }
 
