@@ -30,116 +30,142 @@
     background-position: center;
 }
 
-.enemies{
-    position: relative;
+.content {
     display: flex;
-    // flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    height: 100%;
-    // padding: 1rem;
-    background-image: url(/images/flag-raise.jpg);
-    background-color: color.$color-four;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: auto;
-    
-    h1 {
-        position: absolute;
-        background-color: red;
+
+    .earth {
+        background-image: url(/images/flag-raise.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70%;
+        
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            background-color: color.$color-four;
+            opacity: 0.8;
+            width: 40%;
+        } 
     }
-    
-    .enemies-img{
-        position: absolute;
+
+    .enemies{
+        position: relative;
         display: flex;
         justify-content: space-evenly;
-        align-items: baseline;
-        gap: 10px;
-        width: 100%;
-        height: auto;
+        align-items: flex-end;
         padding: 1rem;
-    }
+        height: 30%;
+        width: 100%;
+        background-color: color.$color-five;
+        
+        .enemies-img{
+            // position: absolute;
+            display: flex;
+            // justify-content: space-evenly;
+            // align-items: baseline;
+            gap: 10px;
+            // width: 100%;
+            // height: auto;
+            // padding: 1rem;
+        }
 
-    .enemies-img h4, p {
-        position: absolute;
-        top: 100px;
-        font-size: 10px;
-        text-align: left;
-    }
+        .enemies-img h4, p {
+            position: absolute;
+            top: 100px;
+            font-size: 10px;
+            text-align: left;
+        }
 
-    .enemies-img h4 {
-        top: 90px;
-    }
+        .enemies-img h4 {
+            top: 90px;
+        }
 
-    .enemies-img p:nth-of-type(1) {
-        top: 70px;
-    }
+        .enemies-img p:nth-of-type(1) {
+            top: 70px;
+        }
 
-    .enemies-img p:nth-of-type(2) {
-        top: 130px;
-    }
+        .enemies-img p:nth-of-type(2) {
+            top: 130px;
+        }
 
-    .personal-prof {
-        @extend %profile; 
-        background-image: url(/images/flag.png);
-    }
+        .update-prof {
+            @extend %profile;
+            background-image: url(/images/helldivers-2-yellow.jpg);
+        }
 
+        .update-prof-mini {
+            @extend %mini-profile;
+            background-image: url(/images/blue-prof.avif);
+        }
 
-    .personal-prof-mini {
-        @extend %mini-profile;
-        background-image: url(/images/salute.webp);
-    }
+        .personal-prof {
+            @extend %profile; 
+            background-image: url(/images/flag.png);
+        }
 
-    .orders-prof {
-        @extend %profile; 
-        background-image: url(/images/flag.png);
-    }
+        .personal-prof-mini {
+            @extend %mini-profile;
+            background-image: url(/images/salute.webp);
+        }
 
-    .orders-prof-mini {
-        @extend %mini-profile;
-        background-image: url(/images/salute.webp);
-    }
+        .orders-prof {
+            @extend %profile; 
+            background-image: url(/images/flag.png);
+        }
 
-    .term-prof {
-        @extend %profile;           
-        background-image: url(../images/terminids.webp);
-    }
+        .orders-prof-mini {
+            @extend %mini-profile;
+            background-image: url(/images/salute.webp);
+        }
 
-    .auto-prof {
-        @extend %profile;
-        background-image: url(/images/automatons.avif);                
-    }
+        .term-prof {
+            @extend %profile;           
+            background-image: url(../images/terminids.webp);
+        }
 
-    .green-dot {
-        color: green;
-        border-radius: 50%;
-    }
+        .auto-prof {
+            @extend %profile;
+            background-image: url(/images/automatons.avif);                
+        }
 
-    .term-prof-mini {
-        @extend %mini-profile;
-        background-image: url(/images/Hunter.webp);
-        background-color: tan; 
-    }
-            
-    .auto-prof-mini {
-        @extend %mini-profile;
-        background-image: url(/images/auto-grunt.webp);
-        background-size: 15px, cover;
-        background-repeat: no-repeat;
-        background-color: rgb(109, 157, 173);
-    }
+        .green-dot {
+            color: green;
+            border-radius: 50%;
+        }
 
-    .illum-prof {
-        @extend %profile;
-        background-image: url(/images/illuminates.jpg);
-    }
+        .term-prof-mini {
+            @extend %mini-profile;
+            background-image: url(/images/Hunter.webp);
+            background-color: tan; 
+        }
+                
+        .auto-prof-mini {
+            @extend %mini-profile;
+            background-image: url(/images/auto-grunt.webp);
+            background-size: 15px, cover;
+            background-repeat: no-repeat;
+            background-color: rgb(109, 157, 173);
+        }
 
-    .illum-prof-mini {
-        @extend %mini-profile;
-        background-image: url(/images/voteless.webp);
+        .illum-prof {
+            @extend %profile;
+            background-image: url(/images/illuminates.jpg);
+        }
+
+        .illum-prof-mini {
+            @extend %mini-profile;
+            background-image: url(/images/voteless.webp);
+        }
     }
 }
+
+
+
+
     // }
 
     // .info{
