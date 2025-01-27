@@ -11,6 +11,7 @@ body {
 }
 
 header {
+  height: 5%;
   background-color: #827e7e;
   margin: 0;
 }
@@ -39,12 +40,6 @@ header .header-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-main {
-  display: flex;
-  max-width: 100%;
-  height: 41.5rem;
 }
 
 aside {
@@ -80,7 +75,7 @@ aside .bottom {
   background-color: #000000;
 }
 
-.enemies .illum-prof, .enemies .auto-prof, .enemies .term-prof, .enemies .orders-prof, .enemies .personal-prof, .enemies .update-prof {
+.content .enemies .illum-prof, .content .enemies .auto-prof, .content .enemies .term-prof, .content .enemies .orders-prof, .content .enemies .personal-prof, .content .enemies .update-prof {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -97,7 +92,7 @@ aside .bottom {
   opacity: 0.8;
 }
 
-.enemies .illum-prof-mini, .enemies .auto-prof-mini, .enemies .term-prof-mini, .enemies .orders-prof-mini, .enemies .personal-prof-mini, .enemies .update-prof-mini {
+.content .enemies .illum-prof-mini, .content .enemies .auto-prof-mini, .content .enemies .term-prof-mini, .content .enemies .orders-prof-mini, .content .enemies .personal-prof-mini, .content .enemies .update-prof-mini {
   position: absolute;
   top: 55px;
   left: 90px;
@@ -109,90 +104,97 @@ aside .bottom {
   background-position: center;
 }
 
-.enemies {
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.content .earth {
+  background-image: url(/images/flag-raise.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70%;
+}
+.content .earth .welcome {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #ffffff;
+  opacity: 0.8;
+  width: 40%;
+}
+.content .enemies {
   position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  background-image: url(/images/flag-raise.jpg);
-  background-color: #ffffff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow-x: auto;
-}
-.enemies h1 {
-  position: absolute;
-  background-color: red;
-}
-.enemies .enemies-img {
-  position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: baseline;
-  gap: 10px;
-  width: 100%;
-  height: auto;
   padding: 1rem;
+  height: 30%;
+  width: 100%;
+  background-color: #d3d3d3;
 }
-.enemies .enemies-img h4, .enemies p {
+.content .enemies .enemies-img {
+  display: flex;
+  gap: 10px;
+}
+.content .enemies .enemies-img h4, .content .enemies p {
   position: absolute;
   top: 100px;
   font-size: 10px;
   text-align: left;
 }
-.enemies .enemies-img h4 {
+.content .enemies .enemies-img h4 {
   top: 90px;
 }
-.enemies .enemies-img p:nth-of-type(1) {
+.content .enemies .enemies-img p:nth-of-type(1) {
   top: 70px;
 }
-.enemies .enemies-img p:nth-of-type(2) {
+.content .enemies .enemies-img p:nth-of-type(2) {
   top: 130px;
 }
-.enemies .update-prof {
+.content .enemies .update-prof {
   background-image: url(/images/helldivers-2-yellow.jpg);
 }
-.enemies .update-prof-mini {
+.content .enemies .update-prof-mini {
   background-image: url(/images/blue-prof.avif);
 }
-.enemies .personal-prof {
-  background-image: url(/images/galaxy-map.webp);
-}
-.enemies .personal-prof-mini {
-  background-image: url(/images/Helldivers-gun.webp);
-}
-.enemies .orders-prof {
+.content .enemies .personal-prof {
   background-image: url(/images/flag.png);
 }
-.enemies .orders-prof-mini {
+.content .enemies .personal-prof-mini {
   background-image: url(/images/salute.webp);
 }
-.enemies .term-prof {
+.content .enemies .orders-prof {
+  background-image: url(/images/flag.png);
+}
+.content .enemies .orders-prof-mini {
+  background-image: url(/images/salute.webp);
+}
+.content .enemies .term-prof {
   background-image: url(../images/terminids.webp);
 }
-.enemies .auto-prof {
+.content .enemies .auto-prof {
   background-image: url(/images/automatons.avif);
 }
-.enemies .green-dot {
+.content .enemies .green-dot {
   color: green;
   border-radius: 50%;
 }
-.enemies .term-prof-mini {
+.content .enemies .term-prof-mini {
   background-image: url(/images/Hunter.webp);
   background-color: tan;
 }
-.enemies .auto-prof-mini {
+.content .enemies .auto-prof-mini {
   background-image: url(/images/auto-grunt.webp);
   background-size: 15px, cover;
   background-repeat: no-repeat;
   background-color: rgb(109, 157, 173);
 }
-.enemies .illum-prof {
+.content .enemies .illum-prof {
   background-image: url(/images/illuminates.jpg);
 }
-.enemies .illum-prof-mini {
+.content .enemies .illum-prof-mini {
   background-image: url(/images/voteless.webp);
 }
 
@@ -223,6 +225,14 @@ aside .bottom {
   }
 }
 body {
+  height: 100vh;
+  max-height: 100%;
   width: 100%;
   margin: 0 auto;
+}
+
+main {
+  display: flex;
+  max-width: 100%;
+  height: 95%;
 }/*# sourceMappingURL=style.css.map */
