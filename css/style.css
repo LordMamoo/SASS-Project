@@ -79,6 +79,7 @@ aside .bottom {
   text-align: center;
   color: #ffffff;
   background-color: #000000;
+  font-size: 12px;
 }
 
 .content .enemies .illum-prof, .content .enemies .auto-prof, .content .enemies .term-prof, .content .enemies .orders-prof, .content .enemies .personal-prof, .content .enemies .update-prof {
