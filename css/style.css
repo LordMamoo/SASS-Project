@@ -85,7 +85,7 @@ aside .bottom {
   height: 150px;
   border-radius: 10px;
   background-color: black;
-  background-size: 200px 70px, cover;
+  background-size: 100% 40%, cover;
   background-position: top;
   background-repeat: no-repeat;
   color: white;
