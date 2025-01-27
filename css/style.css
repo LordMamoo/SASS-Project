@@ -61,13 +61,19 @@ aside nav {
   align-items: center;
 }
 aside nav a {
+  text-align: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 30px;
+  margin: 5px;
+  border-radius: 5px;
   color: black;
+  background-color: #d3d3d3;
+  opacity: 0.8;
+  width: 80%;
 }
 aside nav a:hover {
-  color: #0000ff;
+  opacity: 1;
 }
 aside .bottom {
   text-align: center;
@@ -138,6 +144,10 @@ aside .bottom {
   height: 30%;
   width: 100%;
   background-color: #d3d3d3;
+}
+.content .enemies a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .content .enemies .enemies-img {
   display: flex;
