@@ -7,7 +7,7 @@
     flex-direction: column;
     margin: 0;
     padding: 10px;
-    width: 100%;
+    width: 200px;
     height: 150px;
     border-radius: 10px;
     background-color: black;
@@ -21,7 +21,7 @@
 %mini-profile {
     position: absolute;
     top: 55px;
-    left: 115px;
+    left: 90px;
     width: 30px;
     height: 30px;
     border: black 5px solid;
@@ -77,7 +77,7 @@
             position: relative;
             display: flex;
             // flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: flex-end;
             width: 100%;
             height: 100%;
@@ -92,7 +92,7 @@
                 display: flex;
                 justify-content: space-evenly;
                 align-items: baseline;
-                gap: 10px;
+                gap: 15px;
                 width: 100%;
                 height: auto;
                 padding: 1rem;
@@ -117,15 +117,27 @@
                 top: 130px;
             }
 
+            .update-prof {
+                @extend %profile; 
+                background-image: url(/images/helldivers-2-yellow.jpg);
+            }
+
+
+            .update-prof-mini {
+                @extend %mini-profile;
+                background-image: url(/images/blue-prof.avif);
+
+            }
+
             .personal-prof {
                 @extend %profile; 
-                background-image: url(/images/flag.png);
+                background-image: url(/images/galaxy-map.webp);
             }
 
 
             .personal-prof-mini {
                 @extend %mini-profile;
-                background-image: url(/images/salute.webp);
+                background-image: url(/images/Helldivers-gun.webp);
 
             }
 
