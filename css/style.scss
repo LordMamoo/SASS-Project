@@ -3,6 +3,45 @@
 @use '_color';
 @use '_main';
 
+
+@media (min-width: 768px) {
+    body {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+      font-size: 20px; 
+      padding: 30px;
+      background-color: #cce7d9;
+      line-height: 1.8; 
+    }
+  }
+
+  @media (min-width: 3840px) {
+    body {
+      font-size: 50px; 
+      padding: 40px;
+      background-color: #e8d4f0;
+      line-height: 2;
+    }
+  }
+
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
 footer {
     position: fixed;
     bottom: 0;
