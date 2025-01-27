@@ -72,13 +72,13 @@ aside nav a:hover {
   color: #0000ff;
 }
 
-.enemies .illum-prof, .enemies .auto-prof, .enemies .term-prof, .enemies .orders-prof, .enemies .personal-prof {
+.enemies .illum-prof, .enemies .auto-prof, .enemies .term-prof, .enemies .orders-prof, .enemies .personal-prof, .enemies .update-prof {
   position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 10px;
-  width: 100%;
+  width: 200px;
   height: 150px;
   border-radius: 10px;
   background-color: black;
@@ -89,10 +89,10 @@ aside nav a:hover {
   opacity: 0.8;
 }
 
-.enemies .illum-prof-mini, .enemies .auto-prof-mini, .enemies .term-prof-mini, .enemies .orders-prof-mini, .enemies .personal-prof-mini {
+.enemies .illum-prof-mini, .enemies .auto-prof-mini, .enemies .term-prof-mini, .enemies .orders-prof-mini, .enemies .personal-prof-mini, .enemies .update-prof-mini {
   position: absolute;
   top: 55px;
-  left: 115px;
+  left: 90px;
   width: 30px;
   height: 30px;
   border: black 5px solid;
@@ -104,7 +104,7 @@ aside nav a:hover {
 .enemies {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   width: 100%;
   height: 100%;
@@ -119,7 +119,7 @@ aside nav a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
-  gap: 10px;
+  gap: 15px;
   width: 100%;
   height: auto;
   padding: 1rem;
@@ -139,11 +139,17 @@ aside nav a:hover {
 .enemies .enemies-img p:nth-of-type(2) {
   top: 130px;
 }
+.enemies .update-prof {
+  background-image: url(/images/helldivers-2-yellow.jpg);
+}
+.enemies .update-prof-mini {
+  background-image: url(/images/blue-prof.avif);
+}
 .enemies .personal-prof {
-  background-image: url(/images/flag.png);
+  background-image: url(/images/galaxy-map.webp);
 }
 .enemies .personal-prof-mini {
-  background-image: url(/images/salute.webp);
+  background-image: url(/images/Helldivers-gun.webp);
 }
 .enemies .orders-prof {
   background-image: url(/images/flag.png);
@@ -178,17 +184,17 @@ aside nav a:hover {
   background-image: url(/images/voteless.webp);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
-    width: 70%;
+    width: 70vh;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   body {
-    width: 50%;
+    width: 50vh;
   }
 }
-@media (min-width: 1920px) {
+@media screen and (min-width: 1920px) {
   body {
     font-size: 20px;
     padding: 30px;
@@ -196,7 +202,7 @@ aside nav a:hover {
     line-height: 1.8;
   }
 }
-@media (min-width: 3840px) {
+@media screen and (min-width: 1800px) {
   body {
     font-size: 50px;
     padding: 40px;
