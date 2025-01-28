@@ -109,10 +109,10 @@ aside .bottom {
 
 .content .enemies .illum-prof-mini, .content .enemies .auto-prof-mini, .content .enemies .term-prof-mini, .content .enemies .orders-prof-mini, .content .enemies .personal-prof-mini, .content .enemies .update-prof-mini {
   position: absolute;
-  top: 55px;
+  top: 65px;
   left: 70%;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   border: black 5px solid;
   border-radius: 50%;
   background-size: cover;
