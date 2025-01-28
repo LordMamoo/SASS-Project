@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  height: 5%;
+  height: 7%;
   background-color: #827e7e;
   margin: 0;
 }
@@ -136,6 +136,9 @@ aside .bottom {
   width: 40%;
   height: 50%;
 }
+.content .earth .welcome p {
+  font-size: 15px;
+}
 .content .enemies {
   position: relative;
   display: flex;
@@ -156,16 +159,20 @@ aside .bottom {
   height: 80%;
   gap: 10px;
 }
-.content .enemies .enemies-img h4, .content .enemies p {
+.content .enemies .enemies-img h4, .content .enemies .enemies-img p {
   position: absolute;
-  font-size: 10px;
-  text-align: left;
+}
+.content .enemies .enemies-img h4 {
+  top: 50%;
+  font-size: 14px;
 }
 .content .enemies .enemies-img p:nth-of-type(1) {
-  top: 70px;
+  top: 40%;
+  font-size: 10px;
 }
 .content .enemies .enemies-img p:nth-of-type(2) {
-  top: 130px;
+  top: 80%;
+  font-size: 10px;
 }
 .content .enemies .update-prof {
   background-image: url(/images/helldivers-2-yellow.jpg);
@@ -174,10 +181,10 @@ aside .bottom {
   background-image: url(/images/blue-prof.avif);
 }
 .content .enemies .personal-prof {
-  background-image: url(/images/flag.png);
+  background-image: url(/images/galaxy-map.webp);
 }
 .content .enemies .personal-prof-mini {
-  background-image: url(/images/salute.webp);
+  background-image: url(/images/Helldivers-gun.webp);
 }
 .content .enemies .orders-prof {
   background-image: url(/images/flag.png);
@@ -222,5 +229,5 @@ body {
 main {
   display: flex;
   max-width: 100%;
-  height: 95%;
+  height: 93%;
 }/*# sourceMappingURL=style.css.map */
