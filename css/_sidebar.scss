@@ -19,13 +19,19 @@ aside {
         align-items: center;
 
         a{
+            text-align: center;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 12px;
             line-height: 30px;
+            margin: 5px;
+            border-radius: 5px;
             color: black;
+            background-color: color.$color-five;
+            opacity: 0.8;
+            width: 80%;
         }
         a:hover {
-            color: color.$color-one;
+            opacity: 1;
         }
     }
 
@@ -33,5 +39,6 @@ aside {
         text-align: center;
         color: color.$color-four;
         background-color: color.$color-three;
+        font-size: 12px;
     }
 }
