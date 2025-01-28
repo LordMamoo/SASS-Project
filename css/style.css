@@ -137,16 +137,21 @@ aside .bottom {
 .content .earth .welcome {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 0 1rem 2rem;
   border-radius: 5px;
-  background-color: #ffffff;
   opacity: 0.8;
-  width: 40%;
-  height: 50%;
 }
-.content .earth .welcome p {
-  font-size: 70%;
+.content .earth .welcome .home {
+  padding: 0 1rem 2rem;
+  width: 40%;
+  background-color: #ffffff;
+}
+.content .earth .welcome .description {
+  padding: 0 1rem 2rem;
+  width: 40%;
+  background-color: #ffffff;
 }
 .content .enemies {
   position: relative;
