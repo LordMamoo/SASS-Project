@@ -48,18 +48,26 @@
         .welcome {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 0 1rem 2rem;
             border-radius: 5px;
-            background-color: color.$color-four;
             opacity: 0.8;
-            width: 40%;
-            height: 50%;
 
-            p {
-                font-size: 90%;
+            .home {
+                padding: 0 1rem 2rem;
+                width: 40%;
+                background-color: color.$color-four;
+            }
+
+            .description {
+                padding: 0 1rem 2rem;
+                width: 40%;
+                background-color: color.$color-four;
             }
         } 
+
+
     }
 
     .enemies{
