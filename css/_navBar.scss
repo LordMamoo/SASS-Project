@@ -14,7 +14,7 @@ body {
 
 header {
     height: 5%;
-   background-color: color.$header-color;
+    background-color: color.$header-color;
     @extend %header-footer;
             margin: 0;
         
